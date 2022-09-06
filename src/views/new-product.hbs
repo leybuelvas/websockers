@@ -1,0 +1,17 @@
+<div class="container">
+    <h2>Products</h2>
+    <br>
+        <a href="/" class="btn btn-secondary mb-3 active" role="button">Productos</a>
+    {{> new-product-form }}
+    <hr>
+    {{> table-products }}
+
+</div>
+<style>
+    .active {
+        background-color: #3a5d92 !important;
+        color: #fff !important;
+    }
+</style>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/ProductsAndChatService.js"></script>

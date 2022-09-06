@@ -1,0 +1,51 @@
+<div id="productsContainer">
+    {{#if products}}
+        <div id="productTable" class="table table-responsive">
+            <table class="table">
+                <thead>
+                <tr style="color: #bebeb0;">
+                    <th>Title</th>
+                    <th>Price</th>
+                    <th>Image</th>
+                </tr>
+                </thead>
+                <tbody id="productsContent">
+                {{#each products}}
+                    <tr>
+                        <td>{{ this.title }}</td>
+                        <td>{{ this.price }}</td>
+                        <td>
+                            <img width="30px" src="{{ this.thumbnail}}" alt="{{ this.title }}">
+                        </td>
+                    </tr>
+                {{/each}}
+                </tbody>
+            </table>
+        </div>
+    {{else}}
+        <h3 class="alert alert-warning">Products not found</h3>
+    {{/if}}
+</div>
+
+<div class="container">
+    <h2>Messages</h2>
+    <br>
+
+    <form>
+        <div class="mb-3">
+            <label for="user">User</label>
+            <input type="text" class="form-control" name="user" id="user" placeholder="Please enter your user or email address" required>
+        </div>
+        <div class="mb-3">
+            <label for="msg">Message</label>
+            <textarea  rows="4"  class="form-control" name="msg" id="msg"></textarea>
+        </div>
+
+        <button type="button" class="btn btn-primary" onclick="sendMessage()">Send</button>
+    </form>
+    <hr>
+    <div id="chat">
+
+    </div>
+
+</div>

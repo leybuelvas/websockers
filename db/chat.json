@@ -1,0 +1,26 @@
+[
+  {
+    "author": "Ley",
+    "text": "Hola",
+    "date": "2022-09-06T14:38:29.317Z",
+    "id": 1
+  },
+  {
+    "author": "Ley",
+    "text": "Como Estas?",
+    "date": "2022-09-06T14:46:01.778Z",
+    "id": 2
+  },
+  {
+    "author": "Lesly",
+    "text": "Hola ley, bien gracias",
+    "date": "2022-09-06T14:54:45.884Z",
+    "id": 3
+  },
+  {
+    "author": "admin",
+    "text": "Hola a todos",
+    "date": "2022-09-06T14:59:19.940Z",
+    "id": 4
+  }
+]
